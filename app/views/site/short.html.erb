@@ -6,4 +6,4 @@
   <p><%= submit_tag "Shorten it!" %></p>
 <% end %>
 
-<%= link_to "http://localhost:3000/#{@url.id}",  "/#{@url.id}" %>
+<%= link_to "#{request.host_withport}/#{@url.id}",  "/#{@url.id}" %>
