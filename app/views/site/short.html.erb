@@ -1,0 +1,9 @@
+<h1>Enter a Url to shorten!</h1>
+
+<%= form_tag site_short_path do %>
+  <p>Original Url</p>
+  <p><%= search_field_tag :term %></p>
+  <p><%= submit_tag "Shorten it!" %></p>
+<% end %>
+
+<%= link_to "http://localhost:3000/#{@url.id}",  "/#{@url.id}" %>
